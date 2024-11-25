@@ -4,7 +4,7 @@ void main() {
   print("กรุณาใส่ค่าอาหารทั้งหมด:");
   double totalCost = double.parse(stdin.readLineSync()!);
 
-  print("กรุณาใส่จำนวนคน:");
+  print("กรุณาใส่จำนวนคนทาน:");
   int numberOfPeople = int.parse(stdin.readLineSync()!);
 
   if (numberOfPeople > 0) {
