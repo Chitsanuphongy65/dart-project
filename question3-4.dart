@@ -1,9 +1,18 @@
+import 'dart:io';
+
+// ฟังก์ชัน calculateArea คำนวณพื้นที่ของสี่เหลี่ยมผืนผ้า
 double calculateArea({double length = 1, double width = 1}) {
   return length * width;
 }
 
 void main() {
-  print(calculateArea(length: 5, width: 3)); 
-  print(calculateArea()); 
-  print(calculateArea(length: 7)); 
+  print('กรุณากรอกความยาว (length):');
+  double length = double.parse(stdin.readLineSync()!);
+
+  print('กรุณากรอกความกว้าง (width):');
+  double width = double.parse(stdin.readLineSync()!);
+
+  double area = calculateArea(length: length, width: width);
+
+  print('พื้นที่ของสี่เหลี่ยมผืนผ้าคือ: $area');
 }
